@@ -1,0 +1,66 @@
+@font-face {
+    font-family:myFont;
+    src: url('Baristo.ttf');
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'myFont', sans-serif; 
+  background-image: url("night.jpg");
+  background-size: cover;
+  
+}
+
+h1{
+    color: antiquewhite;
+}
+.button{
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  background-color:rgb(234, 119, 188) ;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  
+}
+.button:hover{
+    background-color: rgb(225, 77, 104);
+    transform: scale(1.2);
+}
+
+.row{
+  margin: 8px 0;
+}
+.row input{
+  width: 291px;
+  font-size: 20px;
+    margin: 0px ;
+    padding: 10px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#circle {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  transform:translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid rgb(218, 210, 64);
+  top: 0;
+  left: 0;
+  width: 2vw;
+  height: 2vw;
+  /* background-color: rgb(72, 18, 137); */
+  /* background-color: #deef6d; */
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+.container{
+  position: relative;
+  z-index: 2;
+  /* overflow: hidden; */
+  /* height: 5vw; */
+}
